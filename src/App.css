@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.weather-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input {
+  display: inline-block;
+  width: 48%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+form input:nth-child(1) {
+  margin-right: 4%
+}
+
+form input:hover,
+form input:focus {
+  outline: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.weather {
+  max-width: 500px;
+  margin: 50px auto 0;
+  padding: 50px 20px;
+  background: #8acbda;
+  color: #fff;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  margin: 20px auto 0;
+  border-radius: 50%;
+  border: 10px solid #ececec;
+  border-top-color: #ccc;
+  animation: load .5s infinite;
+}
+
+@keyframes load {
+  from {
+    transform: rotate(0);
+  } to {
+    transform: rotate(360deg);
+  }
+}
+
+.alert {
+  padding: 3px 10px;
+  background: rgb(218, 89, 89);
+  color: #fff;
+  text-align: center;
+}
